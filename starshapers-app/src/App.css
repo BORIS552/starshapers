@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 350px;
+  width: 100%;
+  padding-left: 0px; 
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+nav {
+  width: 100%;
+  background-color:  #333;
+  margin: 0;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+nav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav li {
+  width: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+nav li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #DA3737;
+}
+
+
+.content {
+  height: 800px;
+  width: 100%;
+  position: relative;
+}
+.main-content {
+  text-align: center;
+  float: left;
+  height: 100%;
+  width: 100%;
+  background: #222;
+}
+.contact {
+  float: right;
+  height: 100%;
+  width: 300px;
+  background: #DA3737;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.montreal {
+  padding: 20px;
+  color: white;
+}
+
+.about-header {
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.about-us {
+  text-align: left;
+  font-size: 20px;
+  padding: 5px;
+  float: left;
+  width: 800px;
+  height: 500px;
+  color: white;
+  margin-left: 100px;
+}
+
+.contact-us {
+  margin-top: 80px;
+  margin-left: 100px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+}
+
+.main-content {
+  color: white;
+  text-align: left;
+}
+.offers-main {
+  width: 800px;
+  height: auto;
+  align-content: center;
+  padding-left: 20px;
+}
+
+.offer-left {
+  float: left;
+}
+
+.offer-right {
+  float: right;
+}
+
+.offer-img-left {
+  width: 300px;
+  height: 200px;
+
+}
+
+.offer-img-right {
+  width: 300px;
+  height: 200px;
+}
+
+.offer-left-button {
+  border-radius: 25px;
+  background:url(./svg/one_to_one.png);
+  width: 300px;
+  height: 200px;
+}
+
+.offer-right-button {
+    border-radius: 25px;
+  background:url(./svg/corporate.png);
+  width: 300px;
+  height: 200px;
+}
+
+.offer-one {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+}
+
+.offer-two {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+}
+
+table {
+  margin-left: 230px;
+  width: 50%;
+  height: 300px;
+}
+.active {
+  color: #da3737;
+}
+
+.intro-video {
+  padding-left: 20px;
+}
+

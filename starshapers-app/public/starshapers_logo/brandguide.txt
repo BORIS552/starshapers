@@ -1,0 +1,16 @@
+Fonts:
+
+Main Font: Biko Bold
+Slogan Font: Visby Medium
+
+Colors:
+
+Cinderella (Main Font)
+
+Hex: #fbd0d0
+RGB: rgb(251, 208, 208)
+
+Cinderella (Slogan Font)
+
+Hex: #fbd0d0
+RGB: rgb(251, 208, 208)
