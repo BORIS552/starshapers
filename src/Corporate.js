@@ -57,7 +57,12 @@ class Corporate extends Component {
               <h4>E: HealthCoach@starshapers.com</h4>
              </div>
           </div>
-        </div>  
+        </div> 
+
+        <div className="footer">
+          <h3 className="footer-header">CopyRight</h3>
+        </div>
+         
       </div>
     );
   }

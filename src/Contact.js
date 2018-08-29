@@ -45,6 +45,11 @@ class Contact extends Component {
              </div>
           </div>
         </div>  
+
+        <div className="footer">
+          <h3 className="footer-header">CopyRight</h3>
+        </div>
+        
       </div>
     );
   }

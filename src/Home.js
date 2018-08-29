@@ -47,7 +47,9 @@ class Home extends Component {
 
         </div> 
 
-
+        <div className="footer">
+          <h3 className="footer-header">CopyRight</h3>
+        </div>
 
       </div>
     );
