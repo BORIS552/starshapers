@@ -11,7 +11,7 @@ class Home extends Component {
         <nav>
           <ul>
             <li><a className="active" href="/">Home</a></li>
-            <li><a href="/about">About SS</a></li>
+            <li><a href="/about">Who is StarShapers</a></li>
             <li><a href="/offers">Offers</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>

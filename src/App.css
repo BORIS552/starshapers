@@ -185,3 +185,13 @@ table {
   padding-left: 20px;
 }
 
+.footer {
+  margin-top: -50px;
+  height: 100px;
+  background-color: #000;
+  color: white;
+}
+
+.footer-header {
+  padding: 20px;
+}

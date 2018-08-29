@@ -11,7 +11,7 @@ class OneToOne extends Component {
           <nav>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About SS</a></li>
+            <li><a href="/about">Who is StarShapers</a></li>
             <li><a className="active"  href="/offers">Offers</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
