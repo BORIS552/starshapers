@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import logo from './svg/color_logo_with_background.svg';
+import logo from './starshapers_logo/png/color_logo_transparent.png';
+import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
+import certificate_one from './starshapers_logo/priscila_certificates/certificate_one.png';
+import certificate_two from './starshapers_logo/priscila_certificates/certificate_two.jpeg';
+import certificate_three from './starshapers_logo/priscila_certificates/certificate_three.png';
 import './App.css';
 class About extends Component {
   render() {
@@ -21,14 +25,41 @@ class About extends Component {
         </header>
         
 
-        <div className="content">
+       
+         <div className="content">
           <div className="main-content">
-          	<h1 className="about-header">About StarShapers </h1>
-           <div className="about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-           		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-           		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-           		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           	</div>
+
+            <h3 className="about-header">What is StarShapers.com </h3>
+            <div className="about-us">
+              <p>Starshapers.com is an organization that helps people who want to achieve their own specific balance goal throughout steps actions engineering, coaching and day to day implementing:</p>
+              <ul>
+                <li>Metabolic and digestive type profile identification</li>
+                <li>Food and nurturing relationship re-education</li>
+                <li>Eater friendly habits change</li>
+                <li>Nutrients knowledge improvement</li>
+                <li>Realistic balance goal phasing</li>
+                <li>Steps action taking weekly accountability</li>
+                <li>Cooking and preparing coaching</li>
+                <li>Body sculpture no torture coaching</li>
+                <li>Acknowledgement of results process accountability and</li>
+                <li>Rewarding! The experience of people who also encountered difficult life paths and turned <br/>
+                    them into their strenghts.</li>
+              </ul>
+              <h4>Be balanced, be the best you can be!</h4>
+              <div className="certificates">
+              <img src={certificate_one} className="certificate-one" alt="certificate_one" />
+              <img src={certificate_two} className="certificate-two" alt="certificate_two" />
+              <img src={certificate_three} className="certificate-three" alt="certificate_three" />
+            </div>
+            </div>
+
+            
+
+
+            <div className="footer">
+            <h2>Copyright @ starshapers.com </h2>
+            </div>
+
           </div>
           <div className="contact">
             <h2 className="montreal">More Offers to come...</h2>
@@ -37,15 +68,17 @@ class About extends Component {
               <h4>(Health Coach)</h4>
               <h4>T: 1-(438)-934-4739</h4>
               <h4>E: HealthCoach@starshapers.com</h4>
+              <img src={priscila} className="priscila-logo-side" alt="priscila" />
              </div>
           </div>
         </div> 
-        <div className="footer">
-          <h3 className="footer-header">CopyRight</h3>
-        </div> 
+
       </div>
     );
   }
 }
 
 export default About;
+
+
+

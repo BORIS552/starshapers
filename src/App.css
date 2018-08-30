@@ -1,11 +1,19 @@
 .App {
-  text-align: center;
+ text-align: center;
+ position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: #FBD0D0;
 }
 
+
 .App-logo {
-  height: 250px;
-  width: 100%;
-  padding-left: 0px; 
+  height: 60px;
+  width: 30%;
+  padding: 20px;
+
 }
 
 .App-header {
@@ -73,11 +81,11 @@ li a:hover {
   float: left;
   height: 100%;
   width: 100%;
-  background: #222;
+  background: #FBD0D0;
 }
 .contact {
   float: right;
-  height: 100%;
+  height: 130%;
   width: 300px;
   background: #DA3737;
   position: absolute;
@@ -92,19 +100,19 @@ li a:hover {
 }
 
 .about-header {
-  color: white;
+  color: black;
   text-align: left;
   margin-left: 100px;
 }
 
 .about-us {
   text-align: left;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 12px;
+  padding: 0px;
+  margin-top: -25px;
   float: left;
   width: 800px;
-  height: 500px;
-  color: white;
+  color: black;
   margin-left: 100px;
 }
 
@@ -113,7 +121,7 @@ li a:hover {
   margin-left: 100px;
   text-align: left;
   font-size: 15px;
-  color: white;
+  color: black;
 }
 
 .main-content {
@@ -125,6 +133,7 @@ li a:hover {
   height: auto;
   align-content: center;
   padding-left: 20px;
+  color: #000;
 }
 
 .offer-left {
@@ -182,16 +191,55 @@ table {
 }
 
 .intro-video {
-  padding-left: 20px;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 78%;
+  height: 65%;
+  }
 
 .footer {
-  margin-top: -50px;
-  height: 100px;
+  text-align: center;
+  padding-bottom: 40px;
+  height: 2px;
   background-color: #000;
   color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+
 }
 
-.footer-header {
-  padding: 20px;
+.priscila-logo-side {
+  width: 75%;
+  height: 100%;
+  border-radius: 50%;
+ border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
+
+.contact-details {
+  height: 20%;
+  font-size: 14px;
+}
+
+.certificate-one {
+  height: 19%;
+  width: 19%;
+  margin-top: -10px;
+}
+.certificate-two {
+  height: 19%;
+  width: 19%;
+  border-radius: 50%;
+  margin-left: 10%;
+}
+
+.certificate-three {
+  height: 28%;
+  width: 28%;
+  margin-left: 10%;
+}
+

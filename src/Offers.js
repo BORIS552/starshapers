@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './svg/color_logo_with_background.svg';
+import logo from './starshapers_logo/png/color_logo_transparent.png';
+import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 import './App.css';
 class Offers extends Component {
   constructor(props) {
@@ -32,10 +33,10 @@ class Offers extends Component {
         </header>
         
 
-        <div className="content">
+       
+         <div className="content">
           <div className="main-content">
-           
-           <div className="offers-main">
+            <div className="offers-main">
            <h1>Offers</h1>
             <div className="offer-left">
               <button className="offer-left-button" onClick = {this.offerLeft}/>
@@ -46,6 +47,9 @@ class Offers extends Component {
               <p>Corporate</p>
             </div>
            </div>
+            <div className="footer">
+            <h2>Copyright @ starshapers.com </h2>
+            </div>
           </div>
           <div className="contact">
             <h2 className="montreal">More Offers to come...</h2>
@@ -54,13 +58,10 @@ class Offers extends Component {
               <h4>(Health Coach)</h4>
               <h4>T: 1-(438)-934-4739</h4>
               <h4>E: HealthCoach@starshapers.com</h4>
+              <img src={priscila} className="priscila-logo-side" alt="priscila" />
              </div>
           </div>
-        </div>  
-
-        <div className="footer">
-          <h3 className="footer-header">CopyRight</h3>
-        </div>
+        </div> 
         
       </div>
     );
@@ -68,3 +69,5 @@ class Offers extends Component {
 }
 
 export default Offers;
+
+
