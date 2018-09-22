@@ -4,9 +4,46 @@ import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 import certificate_one from './starshapers_logo/priscila_certificates/certificate_one.png';
 import certificate_two from './starshapers_logo/priscila_certificates/certificate_two.jpeg';
 import certificate_three from './starshapers_logo/priscila_certificates/certificate_three.png';
+import Modal from 'react-responsive-modal';
 import './App.css';
 class About extends Component {
+  constructor() {
+    super();
+    this.state = {
+    open: false,
+    cert_one: false,
+    cert_two: false,
+    cert_three: false
+    };
+    this.onOpenModal = this.onOpenModal.bind(this);
+    this.onCloseModal = this.onCloseModal.bind(this);
+  }
+  
+
+  onOpenModal(id){
+    if (id == 1) {
+      this.setState({cert_one: true});
+      this.setState({cert_two: false});
+      this.setState({cert_three: false});
+
+    }else if(id == 2){
+      this.setState({cert_one: false});
+      this.setState({cert_two: true});
+      this.setState({cert_three: false});
+    }else {
+      this.setState({cert_one: false});
+      this.setState({cert_two: false});
+      this.setState({cert_three: true});
+    }
+    this.setState({ open: true });
+  };
+
+  onCloseModal(id){
+    this.setState({ open: false });
+  };
+
   render() {
+    const { open } = this.state;
      return (
       <div className="App">
         <div className="nav">
@@ -29,7 +66,7 @@ class About extends Component {
          <div className="content">
           <div className="main-content">
 
-            <h3 className="about-header">What is StarShapers.com </h3>
+            <h3 className="about-header">Who is StarShapers.com </h3>
             <div className="about-us">
               <p>Starshapers.com is an organization that helps people who want to achieve their own specific balance goal throughout steps actions engineering, coaching and day to day implementing:</p>
               <ul>
@@ -47,9 +84,45 @@ class About extends Component {
               </ul>
               <h4>Be balanced, be the best you can be!</h4>
               <div className="certificates">
-              <img src={certificate_one} className="certificate-one" alt="certificate_one" />
-              <img src={certificate_two} className="certificate-two" alt="certificate_two" />
-              <img src={certificate_three} className="certificate-three" alt="certificate_three" />
+
+
+
+             
+
+                <img onClick={() => this.onOpenModal(1)} src={certificate_one} className="certificate-one" alt="certificate_one" />
+                <img onClick={() => this.onOpenModal(3)} src={certificate_three} className="certificate-three" alt="certificate_three" />
+                <img onClick={() => this.onOpenModal(2)} src={certificate_two} className="certificate-two" alt="certificate_two" />
+              
+                {
+                  this.state.cert_one ?
+                  <Modal open={open} onClose={this.onCloseModal} center>
+                    <img src={certificate_one} className="certificate-one-modal" alt="certificate_one" />
+                </Modal>
+                :
+                null
+                }
+
+                {
+                  this.state.cert_three ?
+                  <Modal open={open} onClose={this.onCloseModal} center>
+                    <img src={certificate_three} className="certificate-one-modal" alt="certificate_one" />
+                </Modal>
+                :
+                null
+                }
+
+
+                {
+                  this.state.cert_two ?
+                  <Modal open={open} onClose={this.onCloseModal} center>
+                    <img src={certificate_two} className="certificate-one-modal" alt="certificate_one" />
+                </Modal>
+                :
+                null
+                }
+              
+              
+              
             </div>
             </div>
 
@@ -61,16 +134,7 @@ class About extends Component {
             </div>
 
           </div>
-          <div className="contact">
-            <h2 className="montreal">More Offers to come...</h2>
-             <div className="contact-details">
-              <h4>Priscilla Panier</h4>
-              <h4>(Health Coach)</h4>
-              <h4>T: 1-(438)-934-4739</h4>
-              <h4>E: HealthCoach@starshapers.com</h4>
-              <img src={priscila} className="priscila-logo-side" alt="priscila" />
-             </div>
-          </div>
+          
         </div> 
 
       </div>

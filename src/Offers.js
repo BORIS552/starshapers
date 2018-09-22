@@ -51,16 +51,7 @@ class Offers extends Component {
             <h2>Copyright @ starshapers.com </h2>
             </div>
           </div>
-          <div className="contact">
-            <h2 className="montreal">More Offers to come...</h2>
-             <div className="contact-details">
-              <h4>Priscilla Panier</h4>
-              <h4>(Health Coach)</h4>
-              <h4>T: 1-(438)-934-4739</h4>
-              <h4>E: HealthCoach@starshapers.com</h4>
-              <img src={priscila} className="priscila-logo-side" alt="priscila" />
-             </div>
-          </div>
+          
         </div> 
         
       </div>

@@ -10,14 +10,15 @@
 
 
 .App-logo {
-  height: 60px;
-  width: 30%;
+  height: 70px;
+  width: 27%;
   padding: 20px;
+  margin-top: -17px;
 
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #000;
   color: white;
 }
 
@@ -36,7 +37,7 @@
 
 nav {
   width: 100%;
-  background-color:  #333;
+  background-color:  #000;
   margin: 0;
   overflow: hidden;
   font-size: 16px;
@@ -64,6 +65,7 @@ nav li a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
+    outline: none;
 }
 
 li a:hover {
@@ -91,7 +93,6 @@ li a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10;
 }
 
 .montreal {
@@ -138,11 +139,28 @@ li a:hover {
 
 .offer-left {
   float: left;
+  padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.offer-left:hover {
+  transform: scale(1.5);
 }
 
 .offer-right {
   float: right;
+   padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
+.offer-right:hover {
+  transform: scale(1.5);
+}
+
 
 .offer-img-left {
   width: 300px;
@@ -208,6 +226,7 @@ table {
   bottom: 0;
   width: 100%;
   font-size: 12px;
+  z-index: 2;
 
 }
 
@@ -215,8 +234,7 @@ table {
   width: 75%;
   height: 100%;
   border-radius: 50%;
- border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 5px;
 }
 
@@ -229,6 +247,10 @@ table {
   height: 19%;
   width: 19%;
   margin-top: -10px;
+  transition: transform .2s;
+}
+.certificate-one: hover {
+  transform: scale(1.5);
 }
 .certificate-two {
   height: 19%;
@@ -242,4 +264,10 @@ table {
   width: 28%;
   margin-left: 10%;
 }
+
+.description {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
 
