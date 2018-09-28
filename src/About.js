@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './starshapers_logo/png/color_logo_transparent.png';
-import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
+//import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 import certificate_one from './starshapers_logo/priscila_certificates/certificate_one.png';
 import certificate_two from './starshapers_logo/priscila_certificates/certificate_two.jpeg';
 import certificate_three from './starshapers_logo/priscila_certificates/certificate_three.png';
@@ -21,12 +21,12 @@ class About extends Component {
   
 
   onOpenModal(id){
-    if (id == 1) {
+    if (id === 1) {
       this.setState({cert_one: true});
       this.setState({cert_two: false});
       this.setState({cert_three: false});
 
-    }else if(id == 2){
+    }else if(id === 2){
       this.setState({cert_one: false});
       this.setState({cert_two: true});
       this.setState({cert_three: false});

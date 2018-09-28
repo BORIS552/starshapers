@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './starshapers_logo/png/color_logo_transparent.png';
-import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
+//import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 import './App.css';
 class Offers extends Component {
   constructor(props) {

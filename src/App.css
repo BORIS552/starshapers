@@ -129,6 +129,7 @@ li a:hover {
   color: white;
   text-align: left;
 }
+
 .offers-main {
   width: 800px;
   height: auto;
@@ -212,8 +213,10 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  width: 78%;
-  height: 65%;
+  width: 70%;
+  height: 60%;
+  border-radius: 30px;
+  padding: 20px;
   }
 
 .footer {
