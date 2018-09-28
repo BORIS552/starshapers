@@ -1,91 +1,72 @@
-.App {
+.App{
  text-align: center;
  position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color: #FBD0D0;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: #FBD0D0;
 }
-
-
-.App-logo {
+.App-logo{
   height: 70px;
   width: 27%;
   padding: 20px;
   margin-top: -17px;
-
 }
-
-.App-header {
+.App-header{
   background-color: #000;
   color: white;
 }
-
-.App-title {
+.App-title{
   font-size: 1.5em;
 }
-
-.App-intro {
+.App-intro{
   font-size: large;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-nav {
+nav{
   width: 100%;
   background-color:  #000;
   margin: 0;
   overflow: hidden;
   font-size: 16px;
 }
-
-nav ul {
+nav ul{
   text-align: center;
   margin: 0;
   padding: 0;
 }
-
-nav ul li {
+nav ul li{
   display: inline-block;
   list-style-type: none;
 }
-
-nav li {
+nav li{
   width: 25%;
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
 }
-
-nav li a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    outline: none;
+nav li a{
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  outline: none;
 }
-
-li a:hover {
+li a:hover{
     color: #DA3737;
 }
-
-
-.content {
+.content{
   height: 700px;
   width: 100%;
   position: relative;
 }
-.main-content {
+.main-content{
   text-align: center;
   float: left;
   height: 100%;
   width: 100%;
   background: #FBD0D0;
 }
-.contact {
+.contact{
   float: right;
   height: 130%;
   width: 300px;
@@ -94,19 +75,16 @@ li a:hover {
   top: 0;
   right: 0;
 }
-
-.montreal {
+.montreal{
   padding: 20px;
   color: white;
 }
-
-.about-header {
+.about-header{
   color: black;
   text-align: left;
   margin-left: 100px;
 }
-
-.about-us {
+.about-us{
   text-align: left;
   font-size: 12px;
   padding: 0px;
@@ -116,100 +94,85 @@ li a:hover {
   color: black;
   margin-left: 100px;
 }
-
-.contact-us {
+.contact-us{
   margin-top: 80px;
   margin-left: 100px;
   text-align: left;
   font-size: 15px;
   color: black;
 }
-
-.main-content {
+.main-content{
   color: white;
   text-align: left;
 }
-
-.offers-main {
+.offers-main{
   width: 800px;
   height: auto;
   align-content: center;
   padding-left: 20px;
   color: #000;
 }
-
-.offer-left {
+.offer-left{
   float: left;
   padding: 50px;
-    transition: transform .2s; /* Animation */
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
-.offer-left:hover {
+.offer-left:hover{
   transform: scale(1.5);
 }
-
-.offer-right {
+.offer-right{
   float: right;
-   padding: 50px;
-    transition: transform .2s; /* Animation */
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
-.offer-right:hover {
+.offer-right:hover{
   transform: scale(1.5);
 }
-
-
-.offer-img-left {
-  width: 300px;
-  height: 200px;
-
-}
-
-.offer-img-right {
+.offer-img-left{
   width: 300px;
   height: 200px;
 }
-
-.offer-left-button {
+.offer-img-right{
+  width: 300px;
+  height: 200px;
+}
+.offer-left-button{
   border-radius: 25px;
   background:url(./svg/one_to_one.png);
   width: 300px;
   height: 200px;
 }
-
-.offer-right-button {
-    border-radius: 25px;
+.offer-right-button{
+  border-radius: 25px;
   background:url(./svg/corporate.png);
   width: 300px;
   height: 200px;
 }
-
-.offer-one {
+.offer-one{
   width: 100px;
   height: 100px;
   border-radius: 25px;
 }
-
-.offer-two {
+.offer-two{
   width: 100px;
   height: 100px;
   border-radius: 25px;
 }
-
-table {
+table{
   margin-left: 230px;
   width: 50%;
   height: 300px;
 }
-.active {
+.active{
   color: #da3737;
 }
-
-.intro-video {
+.intro-video{
   position: absolute;
   top: 0;
   left: 0;
@@ -217,9 +180,8 @@ table {
   height: 60%;
   border-radius: 30px;
   padding: 20px;
-  }
-
-.footer {
+}
+.footer{
   text-align: center;
   padding-bottom: 40px;
   height: 2px;
@@ -230,45 +192,39 @@ table {
   width: 100%;
   font-size: 12px;
   z-index: 2;
-
 }
-
-.priscila-logo-side {
+.priscila-logo-side{
   width: 75%;
   height: 100%;
   border-radius: 50%;
     border-radius: 8px;
     padding: 5px;
 }
-
-.contact-details {
+.contact-details{
   height: 20%;
   font-size: 14px;
 }
-
-.certificate-one {
+.certificate-one{
   height: 19%;
   width: 19%;
   margin-top: -10px;
   transition: transform .2s;
 }
-.certificate-one: hover {
+.certificate-one:hover {
   transform: scale(1.5);
 }
-.certificate-two {
+.certificate-two{
   height: 19%;
   width: 19%;
   border-radius: 50%;
   margin-left: 10%;
 }
-
-.certificate-three {
+.certificate-three{
   height: 28%;
   width: 28%;
   margin-left: 10%;
 }
-
-.description {
+.description{
   padding-left: 20px;
   padding-bottom: 20px;
 }
