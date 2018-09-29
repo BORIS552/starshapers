@@ -3,6 +3,16 @@ import logo from './starshapers_logo/png/color_logo_transparent.png';
 import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 import './App.css';
 class Contact extends Component {
+  constructor(){
+    super();
+    this.state = {
+
+    }
+  }
+
+  handleSubmit(event){    
+  }
+
   render() {
      return (
       <div className="App">
@@ -22,20 +32,21 @@ class Contact extends Component {
         
 <div className="content">
           <div className="main-content">
-
-
-              <h1 className="about-header">Contact</h1>
               <div className="contact-us">
-              <h2>Priscilla Panier</h2>
-              <h3>Health Coach</h3>
-
-              <h3>
-                <p>T: 1-(438)-934-4739</p>
-                <p>E: <a>HealthCoach@starshapers.com</a> </p>
-                <p>W: <a>www.starshapers.com</a> </p>
-                <p>A: Montreal *QC* Canada </p>
-              </h3>
-            </div>
+                <div className="contact-us-outer-box">
+                  <div className="contact-us-inner-box">
+                          <div class="form-style-6">
+                            <h1>Contact Us</h1>
+                            <form onSubmit={this.handleSubmit.bind(this)}>
+                                <input type="text" placeholder="Your Name" />
+                                <input type="email"  placeholder="Email Address" />
+                                <textarea  placeholder="Type your Message"></textarea>
+                                <input type="submit" value="Send" />
+                            </form>
+                          </div>
+                  </div>
+                </div>  
+              </div>
 
             <div className="footer">
             <h2>Copyright @ starshapers.com </h2>
