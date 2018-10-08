@@ -40,6 +40,7 @@ class Contact extends Component {
                             <form onSubmit={this.handleSubmit.bind(this)}>
                                 <input type="text" placeholder="Your Name" />
                                 <input type="email"  placeholder="Email Address" />
+                                <input type="number" placeholder="Phone Number" />
                                 <textarea  placeholder="Type your Message"></textarea>
                                 <input type="submit" value="Send" />
                             </form>

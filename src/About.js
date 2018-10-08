@@ -78,9 +78,7 @@ class About extends Component {
                 <li>Steps action taking weekly accountability</li>
                 <li>Cooking and preparing coaching</li>
                 <li>Body sculpture no torture coaching</li>
-                <li>Acknowledgement of results process accountability and</li>
-                <li>Rewarding! The experience of people who also encountered difficult life paths and turned <br/>
-                    them into their strenghts.</li>
+                <li>Acknowledgement of results process accountability.</li>
               </ul>
               <h4>Be balanced, be the best you can be!</h4>
               <div className="certificates">

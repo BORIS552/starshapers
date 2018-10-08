@@ -71,9 +71,9 @@ li a:hover{
   color: white;
 }
 .about-header{
-  color: black;
+  color: white;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 .about-us{
   text-align: left;
@@ -85,6 +85,31 @@ li a:hover{
   color: white;
   font-style: bold;
   margin-left: 100px;
+}
+.OneToOne-desc {
+  font-size: 13px;
+  padding: 0px;
+  margin-top: -50px;
+  float: left;
+  width: 800px;
+  color: white;
+  font-style: bold;
+  margin-left: 50px;
+}
+
+.onetoone-offer-one-desc {
+  float: left;
+  font-size: 14px;
+  font-style: bold;
+  padding: 10px;
+  margin-left: 50px
+}
+.onetoone-offer-two-desc {
+  float: right;
+  font-size: 14px;
+  font-style: bold;
+  padding: 10px;
+  margin-right: 50px;
 }
 .contact-us{
   margin-top: 80px;
@@ -111,6 +136,7 @@ li a:hover{
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  color: white;
 }
 .offer-left:hover{
   transform: scale(1.5);
@@ -122,6 +148,7 @@ li a:hover{
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  color: white;
 }
 .offer-right:hover{
   transform: scale(1.5);
@@ -224,10 +251,7 @@ table{
 .certificate-three:hover {
   transform: scale(1.5);
 }
-.description{
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
+
 textarea {
   resize: none;
 }
@@ -345,5 +369,8 @@ textarea {
 .form-style-6 input[type="button"]:hover{
     background: #2EBC99;
 }
-
-
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
