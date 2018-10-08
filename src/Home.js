@@ -16,6 +16,7 @@ class Home extends Component {
             <li><a href="/about">Who is StarShapers</a></li>
             <li><a href="/offers">Offers</a></li>
             <li><a href="/contact">Contact Us</a></li>
+            <li><a href="https://www.goherbalife.com/starshapers/en-CA">Kick-start product</a></li>
           </ul>
           </nav>
         </div>
