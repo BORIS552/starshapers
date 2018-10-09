@@ -3,7 +3,7 @@ import logo from './starshapers_logo/png/color_logo_transparent.png';
 import './App.css';
 import offer_one from './svg/offer_one.jpg';
 import offer_two from './svg/offer_two.png';
-import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
+//import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 class OneToOne extends Component {
   render() {
      return (

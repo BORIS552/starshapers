@@ -167,11 +167,17 @@ li a:hover{
   width: 300px;
   height: 200px;
 }
+.offer-left-button:hover{
+  cursor: pointer;
+}
 .offer-right-button{
   border-radius: 25px;
   background:url(./svg/corporate.png);
   width: 300px;
   height: 200px;
+}
+.offer-right-button:hover{
+  cursor: pointer;
 }
 .offer-one{
   width: 100px;
@@ -231,6 +237,7 @@ table{
 }
 .certificate-one:hover {
   transform: scale(1.5);
+  cursor: pointer;
 }
 .certificate-two{
   height: 19%;
@@ -241,6 +248,7 @@ table{
 }
 .certificate-two:hover {
   transform: scale(1.5);
+  cursor: pointer;
 }
 .certificate-three{
   height: 28%;
@@ -250,8 +258,8 @@ table{
 }
 .certificate-three:hover {
   transform: scale(1.5);
+  cursor: pointer;
 }
-
 textarea {
   resize: none;
 }
@@ -291,21 +299,21 @@ textarea {
 }
 .form-style-6{
   border-radius: 8px;
-    font: 95% Arial, Helvetica, sans-serif;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 16px;
-    background: #000;
+  font: 95% Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 16px;
+  background: #000;
 }
 .form-style-6 h1{
   border-radius: 8px;
-    background: #b71c1c;
-    padding: 20px 0;
-    font-size: 140%;
-    font-weight: 300;
-    text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
+  background: #b71c1c;
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px 16px -16px;
 }
 .form-style-6 input[type="text"],
 .form-style-6 input[type="date"],
@@ -318,21 +326,21 @@ textarea {
 .form-style-6 textarea,
 .form-style-6 select
 {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-    margin-bottom: 4%;
-    border: 1px solid #ccc;
-    padding: 3%;
-    color: #555;
-    font: 95% Arial, Helvetica, sans-serif;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 3%;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
 }
 .form-style-6 input[type="text"]:focus,
 .form-style-6 input[type="date"]:focus,
@@ -351,26 +359,32 @@ textarea {
 }
 .form-style-6 input[type="submit"],
 .form-style-6 input[type="button"]{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: #b71c1c;
-    border-bottom: 2px solid #b71c1c;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;   
-    color: #fff;
-    border-radius: 8px;
-    outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+  background: #b71c1c;
+  border-bottom: 2px solid #b71c1c;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;   
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
 }
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
-    background: #2EBC99;
+  background: #2EBC99;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+.corporate-desc {
+  margin-left: 100px;
+  width: 800px;
+  padding: 20px;
+  font-style: bold;
 }

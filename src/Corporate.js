@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './starshapers_logo/png/color_logo_transparent.png';
 import './App.css';
 import offer_one from './svg/offer_one.jpg';
-import offer_two from './svg/offer_two.png';
-import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
+//import offer_two from './svg/offer_two.png';
+//import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 class Corporate extends Component {
   render() {
      return (
@@ -28,35 +28,17 @@ class Corporate extends Component {
           <div className="main-content">
             <h1 className="about-header">Corporate</h1>
 
-                    <div className="onetoone-offer-one-desc">
-                    <img src={offer_one} className="offer-one" alt="logo" />
-                    <h3><b>Offer 1: Basic Kit</b>:</h3>
-                    <h4>Description:</h4>
-                    <ul>
-                      <li>972 $ CAD ( 12 months payable = 81 $ CAD per month)</li>
-                      <li>1 free assessment including assessment and objective planification</li>
-                      <li>12 one to one coaching session</li>
-                      <li>1 h/week one to one coaching</li>
-                      <li>one free gift</li>
-                      <br/>
-                      <button>Click</button>
-                    </ul>
-                    </div>
+              <div className="corporate-desc">
+                <img src={offer_one} className="offer-one" alt="logo" />
+                <br/>
+                <br/>
+                <ul>
+                    <li>One on One coaching sessions group packages</li>
+                    <li>Group conferences coaching sessions packages</li>
+                </ul>    
+                Please <a href="mailto:healthcoach@starshapers.com?Subject=Corporate%20Details" target="_top">Contact</a> for further details
+              </div>
                     
-                    <div className="onetoone-offer-two-desc">
-                    <img src={offer_two} className="offer-two" alt="logo" />
-                    <h3><b>Offer 2: Athlete Kit</b>:</h3>
-                    <h4>Description: </h4>
-                     <ul>
-                      <li>1134 $ CAD (12 months payable = 94,5 $ CAD per month)</li>
-                      <li>1 free assessment including assessment and objective planification</li>
-                      <li>12 one to one coaching session, 1h/week</li>
-                      <li>12 customized fitness coaching, 1to 2h/week</li>
-                      <li>one free gift</li>
-                      <br/>
-                    <button>Click</button>
-                    </ul>
-                    </div>
     
           </div>
           
