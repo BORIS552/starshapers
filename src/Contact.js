@@ -3,6 +3,7 @@ import logo from './starshapers_logo/png/color_logo_transparent.png';
 import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 import './App.css';
 import firebase from './firebase.js';
+import Modal from 'react-responsive-modal';
 
 class Contact extends Component {
   constructor(){
@@ -11,16 +12,24 @@ class Contact extends Component {
         name: '',
         email: '',
         phone: '',
-        message:''
+        message:'',
+        open: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.onCloseModal = this.onCloseModal.bind(this);
   }
 
   handleChange(e){
     this.setState({
       [e.target.name]: e.target.value
     });
+  }
+
+  onCloseModal() {
+    this.setState({
+      open: false
+    })
   }
   handleSubmit(e){ 
     e.preventDefault();
@@ -41,6 +50,10 @@ class Contact extends Component {
     contactsRef.push(contact);
 
     this.setState({
+      open: true
+    });
+
+    this.setState({
       name: '',
       email: '',
       phone: '',
@@ -49,6 +62,7 @@ class Contact extends Component {
   }
 
   render() {
+    const { open } = this.state;
      return (
       <div className="App">
       <div className="nav">
@@ -80,6 +94,9 @@ class Contact extends Component {
                                 <textarea  name="message" placeholder="Type your Message" onChange={this.handleChange} value={this.state.message} />
                                 <input type="submit" value="Send" />
                             </form>
+                            <Modal open={open} onClose={this.onCloseModal} center>
+                              <h2>Thanks for contacting us! we will get back to you soon...</h2>
+                            </Modal>
                           </div>
                   </div>
                 </div>  
