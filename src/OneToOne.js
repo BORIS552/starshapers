@@ -5,6 +5,22 @@ import offer_one from './svg/offer_one.jpg';
 import offer_two from './svg/offer_two.png';
 //import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 class OneToOne extends Component {
+  constructor() {
+    super();
+    this.handleOfferOne = this.handleOfferOne.bind(this);
+    this.handleOfferTwo = this.handleOfferTwo.bind(this);
+  }
+
+  handleOfferOne(e) {
+    e.preventDefault();
+    window.location = '/contact';
+  }
+
+  handleOfferTwo(e) {
+    e.preventDefault();
+    window.location = '/contact';
+  }
+
   render() {
      return (
       <div className="App">
@@ -39,7 +55,7 @@ class OneToOne extends Component {
                       <li>1 h/week one to one coaching</li>
                       <li>one free gift</li>
                       <br/>
-                      <button>Click</button>
+                      <button className="button" onClick={this.handleOfferOne}>Contact Us</button>
                     </ul>
                     </div>
                     
@@ -54,7 +70,7 @@ class OneToOne extends Component {
                       <li>12 customized fitness coaching, 1to 2h/week</li>
                       <li>one free gift</li>
                       <br/>
-                    <button>Click</button>
+                    <button className="button" onClick={this.handleOfferTwo}>Contact Us</button>
                     </ul>
                     </div>
     

@@ -5,6 +5,15 @@ import offer_one from './svg/offer_one.jpg';
 //import offer_two from './svg/offer_two.png';
 //import priscila from './starshapers_logo/priscila/priscila_one.jpeg';
 class Corporate extends Component {
+  constructor() {
+    super();
+    this.handleContact = this.handleContact.bind(this);
+  }
+
+  handleContact(e){
+      e.preventDefault();
+      window.location = "/contact";
+    }
   render() {
      return (
       <div className="App">
@@ -36,7 +45,9 @@ class Corporate extends Component {
                     <li>One on One coaching sessions group packages</li>
                     <li>Group conferences coaching sessions packages</li>
                 </ul>    
-                Please <a href="mailto:healthcoach@starshapers.com?Subject=Corporate%20Details" target="_top">Contact</a> for further details
+                Please Contact for further details
+                <br/>
+                <button className="button" onClick={this.handleContact}>Contact Us</button>
               </div>
                     
     

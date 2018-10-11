@@ -5,6 +5,7 @@ import './App.css';
 import firebase from './firebase.js';
 import Modal from 'react-responsive-modal';
 
+
 class Contact extends Component {
   constructor(){
     super();
@@ -12,12 +13,14 @@ class Contact extends Component {
         name: '',
         email: '',
         phone: '',
-        message:'',
+        package: 'Basic Kit',
+        message: '',
         open: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onCloseModal = this.onCloseModal.bind(this);
+    this.handleSelectChange = this.handleSelectChange.bind(this);
   }
 
   handleChange(e){
@@ -26,6 +29,11 @@ class Contact extends Component {
     });
   }
 
+  handleSelectChange(e) {
+    this.setState({
+      package: e.currentTarget.value
+    });
+  }
   onCloseModal() {
     this.setState({
       open: false
@@ -36,6 +44,7 @@ class Contact extends Component {
     console.log("name : "+ this.state.name );
     console.log("email : "+ this.state.email );
     console.log("phone : "+ this.state.phone );
+    console.log("package :"+ this.state.package);
     console.log("message : "+ this.state.message );
 
     const contactsRef = firebase.database().ref('contacts');
@@ -44,6 +53,7 @@ class Contact extends Component {
       name: this.state.name,
       email: this.state.email,
       phone: this.state.phone,
+      package: this.state.package,
       message: this.state.message
     }
 
@@ -57,13 +67,15 @@ class Contact extends Component {
       name: '',
       email: '',
       phone: '',
+      package: '',
       message: ''
     });
   }
 
   render() {
     const { open } = this.state;
-     return (
+    
+  return (
       <div className="App">
       <div className="nav">
           <nav>
@@ -91,6 +103,12 @@ class Contact extends Component {
                                 <input type="text" name="name" placeholder="Your Name" onChange={this.handleChange} value={this.state.name} />
                                 <input type="email"  name="email" placeholder="Email Address" onChange={this.handleChange} value={this.state.email} />
                                 <input type="number" name="phone" placeholder="Phone Number" onChange={this.handleChange} value={this.state.phone} />
+                                <select placeholder="Select a package" value={this.state.package} onChange={this.handleSelectChange} defaultValue={this.state.package}>
+                                  <option value="Basic Kit">Basic Kit</option>
+                                  <option value="Athlete Kit">Athlete Kit</option>
+                                  <option value="Corporate">Corporate</option>
+                                </select> 
+                                <br/>
                                 <textarea  name="message" placeholder="Type your Message" onChange={this.handleChange} value={this.state.message} />
                                 <input type="submit" value="Send" />
                             </form>
