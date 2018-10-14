@@ -13,7 +13,7 @@ class Contact extends Component {
         name: '',
         email: '',
         phone: '',
-        package: 'Basic Kit',
+        package_type: 'Basic Kit',
         message: '',
         open: false
     }
@@ -31,7 +31,7 @@ class Contact extends Component {
 
   handleSelectChange(e) {
     this.setState({
-      package: e.currentTarget.value
+      package_type: e.currentTarget.value
     });
   }
   onCloseModal() {
@@ -44,7 +44,7 @@ class Contact extends Component {
     console.log("name : "+ this.state.name );
     console.log("email : "+ this.state.email );
     console.log("phone : "+ this.state.phone );
-    console.log("package :"+ this.state.package);
+    console.log("package_type :"+ this.state.package_type);
     console.log("message : "+ this.state.message );
 
     const contactsRef = firebase.database().ref('contacts');
@@ -53,7 +53,7 @@ class Contact extends Component {
       name: this.state.name,
       email: this.state.email,
       phone: this.state.phone,
-      package: this.state.package,
+      package_type: this.state.package_type,
       message: this.state.message
     }
 
@@ -67,7 +67,7 @@ class Contact extends Component {
       name: '',
       email: '',
       phone: '',
-      package: '',
+      package_type: '',
       message: ''
     });
   }
@@ -103,7 +103,7 @@ class Contact extends Component {
                                 <input type="text" name="name" placeholder="Your Name" onChange={this.handleChange} value={this.state.name} />
                                 <input type="email"  name="email" placeholder="Email Address" onChange={this.handleChange} value={this.state.email} />
                                 <input type="number" name="phone" placeholder="Phone Number" onChange={this.handleChange} value={this.state.phone} />
-                                <select placeholder="Select a package" value={this.state.package} onChange={this.handleSelectChange} defaultValue={this.state.package}>
+                                <select placeholder="Select a package" onChange={this.handleSelectChange} defaultValue={this.state.package_type}>
                                   <option value="Basic Kit">Basic Kit</option>
                                   <option value="Athlete Kit">Athlete Kit</option>
                                   <option value="Corporate">Corporate</option>
